@@ -7,9 +7,68 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>Lab 1</h1>
-    <p>Homepage in progress.</p>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#home">Logo</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-btn" href="#contact">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Our Website</h1>
+        <p>A simple and modern webpage mockup.</p>
+        <a class="btn" href="#services">Get Started</a>
+      </div>
+
+      <div class="hero-image" aria-label="Placeholder image">
+        <div class="image-box">Image Placeholder</div>
+      </div>
+    </section>
+
+    <section id="services" class="features">
+      <article class="feature-card">
+        <div class="icon">⚙️</div>
+        <h2>Feature One</h2>
+        <p>This is a short description of the first feature.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon">📊</div>
+        <h2>Feature Two</h2>
+        <p>This is a short description of the second feature.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon">❤</div>
+        <h2>Feature Three</h2>
+        <p>This is a short description of the third feature.</p>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        We are a small team building clean, simple web pages. Our goal is to create user-friendly
+        websites that look good on desktop and mobile.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in Touch</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
-</body>
 </html>
